@@ -1,0 +1,347 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Play|Noto+Sans+KR);
+@import url(all.min.css);
+@import url(normalize.css);
+
+/*font*/
+body {
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+}
+
+.ko {
+	font-family: 'Noto Sans KR', sans-serif
+}
+
+/*layout*/
+body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, #ddd 20%, #fff, #fff, #fff, #D7E1EC) fixed;
+	color: #1d1d1b;
+}
+
+.wrap {
+	position: fixed;
+	top: 5%;
+	bottom: 10%;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 85%;
+	border: 1px solid #1d1d1b;
+	min-width: 1270px;
+}
+
+header {
+	position: relative;
+	height: 110px;
+	border-bottom: 1px solid #1d1d1b;
+	overflow: hidden;
+}
+
+header h1 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+header h1 img {
+	width: 100%;
+}
+
+header {}
+
+.gnb [class ^='btn'] img {
+	width: 20px;
+}
+
+.btn-menu,
+.btn-close,
+button {
+	cursor: pointer;
+}
+
+.gnb .btn-menu {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	height: 20px;
+}
+
+.gnb .menu-con {
+	position: absolute;
+	left: 100%;
+	width: 100%;
+	height: 110px;
+	background: #1d1d1b;
+	transition: all 0.3s;
+}
+
+.gnb .menu-con.on {
+	left: 0%;
+}
+
+.gnb .menu {
+	position: absolute;
+	top: 0;
+	line-height: 110px;
+	text-align: center;
+}
+
+.gnb .menu > a {
+	position: relative;
+	float: left;
+	width: 176px;
+	height: 110px;
+}
+
+.gnb .menu > a:first-child {
+	background-image: url(../img/nike_swoosh_logo_sub2.png)
+}
+
+.gnb .menu > a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.gnb .menu > a:hover img {
+	opacity: 1;
+}
+
+.gnb .menu > a p {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 0 2px #1d1d1b;
+}
+
+.gnb .btn-close {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	height: 20px;
+}
+
+main .itempage-1 {
+	position: absolute;
+	width: 100%;
+	top: 112px;
+	bottom: 102px;
+	overflow-y: auto;
+	background: url(../img/bg_dot.png) repeat;
+}
+
+main .slide {
+	position: absolute;
+	top: 15%;
+	bottom: 5%;
+	left: 100px;
+	right: 650px;
+	height: 80%;
+}
+
+main .slide img {
+	height: 400px;
+}
+
+.slick-prev {
+	margin-left: -50px;
+	;
+	z-index: 1;
+}
+
+.slick-next {
+	margin-right: -20px;
+	z-index: 1;
+}
+
+/*
+.arrow-prev {
+	position: absolute;
+	top: 0;
+	left: -60px;
+}
+
+.arrow-next {
+	position: absolute;
+	top: 0;
+	right: -60px;
+}
+
+.arrow-prev,
+.arrow-next {
+	opacity: 0.7;
+	font-size: 50px;
+}
+
+.arrow-prev:hover,
+.arrow-next:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.arrow-prev:active,
+.arrow-next:active {
+	opacity: 0.9;
+	color: #0075ff;
+}
+*/
+
+main .text-box {
+	position: absolute;
+	right: 1px;
+	width: 500px;
+	height: 100%;
+	padding: 0px 20px;
+	/*	background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+main .text-box h2 {
+	margin: 20px 0 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+main h2:after {
+	content: '\f159
+  298,000';
+  font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+	display: block;
+	margin-top: 20px;
+}
+
+main .text-box p {
+	text-align: justify;
+}
+
+/*구매관련 : itempage2*/
+main .itempage-2 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	border-top: 1px solid #1d1d1d;
+}
+
+main .bt-img1 {
+	/*	position: relative;*/
+	float: left;
+	height: 100px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-right: 1px solid #1d1d1d;
+}
+
+main .bt-img1 img {
+	height: 100%;
+}
+
+main .bt-img2 {
+	float: right;
+	height: 100px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-left: 1px solid #1d1d1d;
+}
+
+main .bt-img2 img {
+	height: 100%;
+}
+
+main .purchase {
+	position: absolute;
+	top: 0;
+	left: 130px;
+	right: 145px;
+
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main .purchase button {
+	width: 150px;
+	line-height: 40px;
+	margin: 0 20px;
+	border: 1px solid #1d1d1d;
+	border-radius: 5px;
+}
+
+main .purchase button:last-child {
+	background: #1d1d1d;
+	color: #fff;
+}
+
+main .purchase button:active {
+	background: #0075ff;
+	color: #fff;
+}
+
+main #sizetext {
+	display: inline-block;
+	transform: translateY(-3px);
+	margin-right: 3px;
+}
+
+main #inputvalue {
+	border: 1px solid #1d1d1d;
+	border-radius: 5px;
+	text-align: center;
+	transform: translateY(-3px);
+}
+
+main #qty-box {
+	border: 1px solid #1d1d1d;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/*footer*/
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*  width: 1200px;*/
+	height: 40px;
+	line-height: 40px;
+	/*  margin: auto*/
+	background: #1d1d1b;
+	font-size: 12px;
+	color: #b3b3b3;
+}
+
+footer .fnb {
+	float: left;
+	margin-left: 50px
+}
+
+footer .fnb a {
+	display: block;
+	float: left;
+	padding: 0 10px
+}
+
+footer .fnb a:hover {
+	background: #565656
+}
+
+footer address {
+	float: right;
+	margin-right: 50px
+}
